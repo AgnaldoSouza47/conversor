@@ -48,3 +48,11 @@ h2 {
     transition: all 0.2s ease;
     font-size: 0.8rem;
 }
+.secao-conversor {
+    display: none;
+    background: #dee1e4;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #de0;
+    margin-bottom: 25px;
+}
