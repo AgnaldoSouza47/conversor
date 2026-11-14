@@ -68,6 +68,33 @@
             </div>
         </div>
     </form>
+
+    <!-- NOVA Tela 3: Centímetro para Metro e Vice-Versa (Conversão mútua simultânea) -->
+
+
+    <form id="conteudo-cm-metro" class="secao-conversor" oninput="resultadoMetro.value = (Number(cmMetroInput.value) / 100).toFixed(2); resultadoCmOut.value = (Number(metroInput.value) * 100).toFixed(2)">
+        <div class="titulo-bloco">Centímetros para Metros</div>
+        <div class="grupo-input">
+            <label for="cmMetroInput" class="legenda-input">CM:</label>
+            <input type="number" id="cmMetroInput" placeholder="Digite em cm..." step="any" min="0">
+        </div>
+        <div class="resultado">
+            <span>Metros:</span>
+            <output name="resultadoMetro">0</output>
+            <span>m</span>
+        </div>
+
+        <div class="titulo-bloco" style="margin-top: 20px;">Metros para Centímetros</div>
+        <div class="grupo-input">
+            <label for="metroInput" class="legenda-input">M:</label>
+            <input type="number" id="metroInput" placeholder="Digite em metros..." step="any" min="0">
+        </div>
+        <div class="resultado">
+            <span>Centímetros:</span>
+            <output name="resultadoCmOut">0</output>
+            <span>cm</span>
+        </div>
+    </form>
     
 </body>
 </html>
