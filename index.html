@@ -132,5 +132,12 @@
         </table>
     </div>
 </div>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(() => console.log('PWA Ativo e Pronto!'))
+      .catch((err) => console.log('Erro no PWA:', err));
+  }
+</script>
 </body>
 </html>
