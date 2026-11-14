@@ -30,3 +30,10 @@ h2 {
 .radio-aba {
     display: none;
 }
+.abas-botoes {
+    display: flex;
+    background-color: #e9ecef;
+    padding: 4px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
