@@ -55,4 +55,17 @@ h2 {
     border-radius: 8px;
     border: 1px solid #de0;
     margin-bottom: 25px;
+}/* LÓGICA DAS ABAS ATIVAS */
+
+#aba1:checked ~ .abas-botoes label[for="aba1"],
+#aba2:checked ~ .abas-botoes label[for="aba2"],
+#aba3:checked ~ .abas-botoes label[for="aba3"] {
+    background-color: #ebe7e7;
+    color: #0d6efd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
+
+#aba1:checked ~ #conteudo-cm-outros { display: block; }
+#aba2:checked ~ #conteudo-pol-metric { display: block; }
+#aba3:checked ~ #conteudo-cm-metro { display: block; }
+
