@@ -27,7 +27,28 @@
         <label for="aba2" class="btn-aba">POL → MM / CM</label>
         <label for="aba3" class="btn-aba">CM ↔ METRO</label>
     </div>
+<!-- Tela 1: CENTÍMETROS para MM e Polegadas -->
 
+    <form id="conteudo-cm-outros" class="secao-conversor" oninput="resultadoMm1.value = (Number(cmInput.value) * 10).toFixed(1); resultadoPol1.value = (Number(cmInput.value) / 2.54).toFixed(3)">
+        <div class="grupo-input">
+            <label for="cmInput" class="legenda-input">CM:</label>
+            <input type="number" id="cmInput" placeholder="Digite em centímetros..." step="any" min="0">
+        </div>
+        <div class="resultado dupla">
+            <div>
+                <span>Milímetros:</span>
+                <output name="resultadoMm1">0</output>
+                <span>mm</span>
+            </div>
+            <div>
+                <span>Polegadas:</span>
+                <output name="resultadoPol1">0</output>
+                <span>pol (in)</span>
+            </div>
+        </div>
+    </form>
+
+    
     
 </body>
 </html>
