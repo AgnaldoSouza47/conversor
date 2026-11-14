@@ -48,7 +48,26 @@
         </div>
     </form>
 
-    
+    <!-- Tela 2: Polegadas para MM e CM -->
+
+    <form id="conteudo-pol-metric" class="secao-conversor" oninput="resultadoMm2.value = (Number(polInput.value) * 25.4).toFixed(2); resultadoCm2.value = (Number(polInput.value) * 2.54).toFixed(3)">
+        <div class="grupo-input">
+            <label for="polInput" class="legenda-input">POL:</label>
+            <input type="number" id="polInput" placeholder="Digite em polegadas..." step="any" min="0">
+        </div>
+        <div class="resultado dupla">
+            <div>
+                <span>Milímetros:</span>
+                <output name="resultadoMm2">0</output>
+                <span>mm</span>
+            </div>
+            <div>
+                <span>Centímetros:</span>
+                <output name="resultadoCm2">0</output>
+                <span>cm</span>
+            </div>
+        </div>
+    </form>
     
 </body>
 </html>
