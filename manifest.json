@@ -1,0 +1,24 @@
+{
+  "name": "Conversor de Medidas Pro",
+  "short_name": "Conversor",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f0f2f5",
+  "theme_color": "#0d6efd",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "aplicativo-movel icon 192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "aplicativo-movel icon 512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+   
+  ]
+
+  
+}
