@@ -1,33 +1,36 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Medidas</title>
+    <title>Conversor de Medidas </title>
 
     <!-- Vincula o arquivo CSS externo -->
     <link rel="stylesheet" href="css/conversor.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#0d6efd">
-
-</head>
+    
+    </head>
 <body>
 <div class="container">
     <h2>Conversor de Medidas</h2>
 
     <!-- Controles invisíveis de estado das abas (Agora são 3) -->
-       <input type="radio" id="aba1" name="abas-controle" class="radio-aba" checked>
+
+
+    <input type="radio" id="aba1" name="abas-controle" class="radio-aba" checked>
     <input type="radio" id="aba2" name="abas-controle" class="radio-aba">
     <input type="radio" id="aba3" name="abas-controle" class="radio-aba">
 
-<!-- Botões das abas -->
+    <!-- Botões das abas -->
 
-<div class="abas-botoes">
+    <div class="abas-botoes">
         <label for="aba1" class="btn-aba">CM → MM / POL</label>
         <label for="aba2" class="btn-aba">POL → MM / CM</label>
         <label for="aba3" class="btn-aba">CM ↔ METRO</label>
     </div>
-<!-- Tela 1: CENTÍMETROS para MM e Polegadas -->
+
+    <!-- Tela 1: CENTÍMETROS para MM e Polegadas -->
 
     <form id="conteudo-cm-outros" class="secao-conversor" oninput="resultadoMm1.value = (Number(cmInput.value) * 10).toFixed(1); resultadoPol1.value = (Number(cmInput.value) / 2.54).toFixed(3)">
         <div class="grupo-input">
@@ -95,6 +98,7 @@
             <span>cm</span>
         </div>
     </form>
+
     <!-- Tabela de Equivalência -->
 
     <div class="container-tabela">
@@ -132,6 +136,7 @@
         </table>
     </div>
 </div>
+
 <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js')
@@ -141,3 +146,4 @@
 </script>
 </body>
 </html>
+
